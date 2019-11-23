@@ -7,20 +7,10 @@ const api = instance.create({
 })
 
 export const post = async (endpoint, data) =>
-  await api.post(endpoint, data, {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: localStorage.token,
-    }
-  })
+  await api.post(endpoint, data)
 
 export const put = async (endpoint, data) =>
-  await api.put(endpoint, data, {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: localStorage.token,
-    }
-  })
+  await api.put(endpoint, data)
 
 export const get = async endpoint =>
   await api.get(endpoint)

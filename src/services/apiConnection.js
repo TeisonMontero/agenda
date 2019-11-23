@@ -5,8 +5,7 @@ const {
 } = process.env
 
 export const headers = {
-  'Content-Type': 'application/json',
-  Authorization: localStorage.token,
+  'Content-Type': 'application/json'
 }
 
 export const apiRoute = `${URL}:${PORT}${PREFIX}`

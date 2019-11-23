@@ -1,13 +1,9 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Button } from '../Forms/Button'
 import { Title } from '../Title'
 import { Field } from '../Forms/Field'
 
-// Actions
-import { setOnBoarding } from '../../store/actions'
-
-const Header = ({ setOnBoarding }) => {
+const Header = ({}) => {
   const onSubmit = async e => {
     e.preventDefault()
     console.log(e)
@@ -40,8 +36,5 @@ const Header = ({ setOnBoarding }) => {
   )
 }
 
-/* const mapStateToProps = state => ({
-  user: state.auth.user,
-}) */
 
-export default connect(null, { setOnBoarding })(Header)
+export default Header

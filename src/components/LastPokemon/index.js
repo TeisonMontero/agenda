@@ -1,1 +1,0 @@
-export { LastPokemon } from './LastPokemon'
